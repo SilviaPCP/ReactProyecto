@@ -10,7 +10,7 @@ let productInDataBase = {
 
 let user = {
   color: "warning",
-  titulo: "Users quantity",
+  titulo: "Users in Data Base",
   valor: 5,
   icono: "fas fa-user",
 };

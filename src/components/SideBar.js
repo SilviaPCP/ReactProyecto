@@ -40,7 +40,7 @@ function SideBar() {
         <li className="nav-item">
           <a className="nav-link collapsed" href="/">
             <i className="fas fa-fw fa-folder"></i>
-            <span className="secundary-font">Pages</span>
+            <span className="secundary-font">Usuarios</span>
           </a>
         </li>
 
@@ -48,7 +48,7 @@ function SideBar() {
         <li className="nav-item">
           <a className="nav-link" href="/">
             <i className="fas fa-fw fa-chart-area"></i>
-            <span className="secundary-font">Charts</span>
+            <span className="secundary-font">Productos</span>
           </a>
         </li>
 

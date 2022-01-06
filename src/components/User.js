@@ -3,25 +3,25 @@
 import React, { Component } from "react";
 
 //Importar nuestro componente
-import ProductList from "./ProductList";
+import UserList from "./UserList";
 
-class Product extends Component {
+class User extends Component {
   constructor() {
     super();
     this.state = {
-      products: [],
+      users: [],
     };
   }
   //Compomentes Ciclo de vida - Montar - Actualizar - Desmontar
   //Montaje
   componentDidMount() {
-    fetch("/api/products")
+    fetch("/api/users")
       .then((respuesta) => {
         return respuesta.json();
       })
-      .then((products) => {
-        //console.log(products)
-        this.setState({ products: products.data });
+      .then((users) => {
+        console.log(users)
+        this.setState({ users: users.data });
       })
       .catch((error) => console.log(error));
   }
@@ -30,7 +30,7 @@ class Product extends Component {
     return (
       <React.Fragment>
         {/*<!-- products LIST -->*/}
-        <h1 className="h3 mb-2 text-gray-800 "> All products in the Database</h1>
+        <h1 className="h3 mb-2 text-gray-800 "> All users in the Database</h1>
 
         {/*<!-- DataTales Example -->*/}
         <div className="card shadow mb-4">
@@ -44,27 +44,27 @@ class Product extends Component {
               >
                 <thead>
                   <tr>
-                    <th>Id</th>
+                  <th>Id</th>
                     <th>Nombre</th>
-                    <th>Precio</th>
-                    <th>Descuento</th>
-                    <th>Categoría</th>
+                    <th>Apellido</th>
+                    <th>Correo</th>
+                    <th>Sexo</th>
                   </tr>
                 </thead>
                 <tfoot>
                   <tr>
                     <th>Id</th>
                     <th>Nombre</th>
-                    <th>Precio</th>
-                    <th>Descuento</th>
-                    <th>Categoría</th>
+                    <th>Apellido</th>
+                    <th>Correo</th>
+                    <th>Sexo</th>
                   </tr>
                 </tfoot>
                 <tbody>
                   {
                     //console.log(this.state.products)
-                    this.state.products.map((product, index) => {
-                      return <ProductList {...product} key={index} />;
+                    this.state.users.map((user, index) => {
+                      return <UserList {...user} key={index} />;
                     })
                   }
                 </tbody>
@@ -76,4 +76,4 @@ class Product extends Component {
     );
   }
 }
-export default Product;
+export default User;
