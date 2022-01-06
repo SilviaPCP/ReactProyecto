@@ -1,6 +1,7 @@
 import React from "react";
 import SmallCard from "./SmallCard";
 
+
 let productInDataBase = {
   color: "primary",
   titulo: "Products in Data Base",
