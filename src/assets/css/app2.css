@@ -1,0 +1,47 @@
+:root {
+  --fuentePrincipal: "Raleway", sans-serif;
+  --fuenteSecundaria: "Roboto", sans-serif;
+  --primario: #00305efa;
+  --secundario: #29bdebef;
+  --terciario: #066de2ef;
+  --gris: rgba(255, 248, 248, 0.87);
+  --blanco: #ffffffff;
+  --negro: #000000;
+}
+.bg-azul {
+  background-color: var(--primario);
+}
+
+img.w-50 {
+  width: 100%;
+}
+
+.principal-font {
+  font-family: var(--fuentePrincipal) !important;
+  font-size: 20px !important;
+  color: var(--blanco) !important;
+}
+
+.secundary-font {
+  font-family: var(--fuenteSecundaria) !important;
+  font-size: 20px !important;
+  color: var(--blanco) !important;
+}
+
+.btn-blue {
+  background-color: var(--terciario);
+  color: var(--blanco) !important;
+  font-family: var(--fuenteSecundaria);
+}
+
+.center {
+  text-align: center;
+}
+
+.categories-div {
+  background-color: var(--secundario);
+  border-radius: 10px;
+  color: var(--primario);
+  font-family: var(--fuentePrincipal);
+  font-size: 20px;
+}
